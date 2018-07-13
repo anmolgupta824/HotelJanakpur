@@ -1,14 +1,62 @@
-<!DOCTYPE html>    
-<html xmlns="http://www.w3.org/1999/xhtml">    
-<head>    
-    <title></title>    
-</head>    
-<body>    
-    <div>    
-        <h1>Home Page</h1> <br />    
+<link rel="stylesheet" type="text/css" href="css/full_slider.css" />
+
+<div>
+<div  id="myCarousel" class="carousel slide"  data-parallax="scroll" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+     <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+       <li data-target="#myCarousel" data-slide-to="5"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="Images/1.jpg" width="100%" >
+    </div>
+
+    <div class="item">
+      <img src="Images/2.jpg" width="100%" >
+     
+    </div>
+
+    <div class="item">
+      <img src="Images/3.jpg" width="100%" >
     
-        <p>{{ HomeMessage }}</p>    
-    </div>    
+    </div>
     
-</body>    
-</html>  
+    <div class="item">
+      <img src="Images/4.jpg" width="100%" >
+    
+    </div>
+    <div class="item">
+      <img src="Images/5.jpg" width="100%" >
+  
+    </div>
+    <div class="item">
+      <img src="Images/6.jpg" width="100%" >
+    
+    </div>
+   
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div style="height:1000px;background-color:red;font-size:36px">
+Scrol Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+
+</div>
